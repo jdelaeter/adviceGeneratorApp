@@ -33,8 +33,15 @@
 }
 
 .quote {
-    text-align: center;
     color: var(--lightcyan-color);
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.3px;
 }
 
 hr {
