@@ -7,13 +7,12 @@ import { AdviceService } from 'shared/services/advice.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
   title = 'adviceGeneratorApp';
 
   quote: any
 
-  constructor(private advice: AdviceService) {
-
-  }
+  constructor(private advice: AdviceService) { }
 
   ngOnInit() {
     this.getList()
@@ -23,7 +22,6 @@ export class AppComponent {
     this.advice.getAdvice().subscribe(
       (data: any) => {
         this.quote = data.slip
-        console.log(this.quote)
       }
     )
   }
